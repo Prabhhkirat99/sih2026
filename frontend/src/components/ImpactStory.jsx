@@ -8,7 +8,7 @@ export const ImpactStory = ({ challenge }) => {
   const story = impactStory(challenge);
 
   const share = () => {
-    const text = `JMIB Impact — ${story.headline}\n${story.metrics
+    const text = `JSIB Impact — ${story.headline}\n${story.metrics
       .map((m) => `• ${m.label}: ${m.before} → ${m.after}`)
       .join("\n")}\n"${story.quote}"\nDelivered with ${story.university} & ${story.partner}.`;
     try {

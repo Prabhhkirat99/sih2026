@@ -41,7 +41,7 @@ export default function Home() {
               transition={{ delay: 0.12 }}
               className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl"
             >
-              JMIB connects citizens, governments, universities, researchers, industries and organizations to
+              JSIB connects citizens, governments, universities, researchers, industries and organizations to
               collaboratively solve the problems that matter most.
             </motion.p>
             <motion.div

@@ -42,9 +42,9 @@ export const Header = () => {
               <Activity className="w-5 h-5" strokeWidth={2.4} />
             </span>
             <span className="leading-tight">
-              <span className="block font-heading font-extrabold text-[#0A192F] text-lg tracking-tight">JMIB</span>
+              <span className="block font-heading font-extrabold text-[#0A192F] text-lg tracking-tight">JSIB</span>
               <span className="block text-[10px] uppercase tracking-[0.18em] text-slate-500 font-semibold -mt-0.5">
-                Societal Innovation Bridge
+                Jharkhand Societal Innovation Bridge
               </span>
             </span>
           </Link>

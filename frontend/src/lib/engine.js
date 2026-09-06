@@ -1,4 +1,4 @@
-// JMIB deterministic "AI" engine + universal societal-challenge data. No external API.
+// JSIB deterministic "AI" engine + universal societal-challenge data. No external API.
 
 export const LIFECYCLE = [
   "Submitted",
