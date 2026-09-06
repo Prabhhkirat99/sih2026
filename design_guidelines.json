@@ -1,0 +1,274 @@
+{
+  "project_name": "JMIB - Jharkhand MedTech Innovation Bridge",
+  "sih_code": "SIH26043",
+  "app_type": "hybrid_fullstack (frontend-heavy SaaS dashboard app with localStorage persistence)",
+  "emotional_archetype": "ARCHETYPE 1: ORGANIC & EARTHY + ARCHETYPE 4: SWISS & HIGH-CONTRAST (Government Innovation & BioMedTech SaaS Trust)",
+  "theme_strategy": {
+    "default_mode": "light",
+    "support_toggle": true,
+    "design_tone": "Premium BioMedTech SaaS style with sleek glassmorphism elements, high trust government badge accents, crisp typography, generous whitespace, and sharp functional clarity. Strictly avoid tacky rainbow gradients, oversized cards, and childish illustrations."
+  },
+  "typography": {
+    "heading_font": "Outfit, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "font_imports": [
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+    ],
+    "hierarchy": {
+      "hero_title": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]",
+      "section_title": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "card_heading": "text-lg sm:text-xl font-semibold tracking-tight",
+      "subtitle": "text-base sm:text-lg font-normal leading-relaxed text-slate-600 dark:text-slate-300",
+      "badge_label": "text-xs font-semibold uppercase tracking-[0.15em]"
+    }
+  },
+  "colors": {
+    "primary": {
+      "teal_dark": "#005F73",
+      "teal_main": "#0A9396",
+      "teal_light": "#94D2BD",
+      "mint_subtle": "#E6F4F1"
+    },
+    "navy": {
+      "deep": "#0A192F",
+      "slate": "#0F172A",
+      "surface": "#1E293B",
+      "subtle": "#334155"
+    },
+    "accent": {
+      "amber": "#EE9B00",
+      "amber_hover": "#D97706",
+      "amber_subtle": "#FEF3C7"
+    },
+    "neutral": {
+      "background": "#F8FAFC",
+      "card_light": "#FFFFFF",
+      "border_light": "#E2E8F0",
+      "text_dark": "#0F172A",
+      "text_muted": "#64748B"
+    },
+    "status": {
+      "under_review": { "bg": "#FEF3C7", "text": "#B45309", "border": "#FDE68A" },
+      "ai_analyzed": { "bg": "#E0F2FE", "text": "#0369A1", "border": "#BAE6FD" },
+      "verified": { "bg": "#E6F4F1", "text": "#005F73", "border": "#94D2BD" },
+      "high_priority": { "bg": "#FEE2E2", "text": "#B91C1C", "border": "#FCA5A5" }
+    }
+  },
+  "layout_and_navigation": {
+    "top_nav": {
+      "style": "Sticky crystal glass header (backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-slate-800 z-50 px-6 py-3.5)",
+      "elements": [
+        "Government of Jharkhand / SIH26043 Emblem + JMIB Brand Logo",
+        "Primary Nav Links: Home, Explore Challenges, Submit Challenge, Ministry Dashboard, Project Pipeline",
+        "Search & Quick Filter Input",
+        "Theme Toggle + Notification Bell + 'Report Challenge' CTA button"
+      ]
+    },
+    "collapsible_sidebar": {
+      "style": "Sleek collapsible left panel for Dashboard and Challenge Detail views with data-testid='sidebar-toggle'",
+      "menu_items": [
+        "Overview / Ministry Metrics",
+        "All Healthcare Challenges",
+        "AI Analysis Center",
+        "University Match Hub",
+        "Industry Partner Network",
+        "Lifecycle Progress Tracker"
+      ]
+    },
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 py-8"
+  },
+  "core_focus_features": [
+    {
+      "feature_id": "home_hero_and_pipeline",
+      "title": "Landing Hero & Innovation Pipeline",
+      "hero_title": "Turning Healthcare Challenges Into Real-World Innovation.",
+      "hero_subtitle": "JMIB connects communities, healthcare institutions, universities and MedTech companies to transform unmet healthcare needs into validated solutions.",
+      "pipeline_stages": [
+        "Challenge",
+        "AI Analysis",
+        "University",
+        "Industry",
+        "Prototype",
+        "Validation",
+        "Impact"
+      ],
+      "ctas": [
+        { "label": "Report a Challenge", "action": "open_submit_modal_or_page", "style": "bg-[#005F73] hover:bg-[#0A9396] text-white shadow-md font-semibold px-6 py-3 rounded-lg" },
+        { "label": "Explore Challenges", "action": "scroll_or_nav_to_explore", "style": "bg-white hover:bg-slate-50 text-[#005F73] border border-slate-300 font-semibold px-6 py-3 rounded-lg" }
+      ]
+    },
+    {
+      "feature_id": "challenge_submission_form",
+      "title": "Healthcare Challenge Submission",
+      "form_fields": [
+        "title (text)",
+        "description (textarea)",
+        "healthcare_domain (select: Maternal & Child Health, Diagnostics, Telemedicine, Medical Devices, Rural Health, Surgical Tools, Infectious Diseases)",
+        "district (select: Ranchi, Dhanbad, East Singhbhum, Hazaribagh, Palamu, Giridih, Dumka, Bokaro, etc.)",
+        "people_affected (number/range e.g. 250,000+ pregnant women)",
+        "urgency (select: Critical, High, Moderate, Low)",
+        "supporting_evidence (file attachment upload or reference links)"
+      ],
+      "submission_state": "Saves to localStorage, immediately tags status as 'Under Ministry Review' with animated confirmation drawer/modal and toast notification."
+    },
+    {
+      "feature_id": "ai_problem_analysis_panel",
+      "title": "AI Problem Analysis Panel",
+      "required_disclaimer": "AI-assisted analysis, not medical diagnosis",
+      "metrics": [
+        "Category",
+        "Priority (HIGH / CRITICAL / MODERATE)",
+        "Impact Score (0-100 gauge/progress bar)",
+        "Required Expertise tags",
+        "Similar Challenges list",
+        "AI Confidence Score (%)"
+      ],
+      "behavior": "Mock/Deterministic analysis engine that computes scores and matches upon challenge submission or detail view."
+    },
+    {
+      "feature_id": "university_matching",
+      "title": "University Matching Module",
+      "example_match": {
+        "institution": "RIMS Ranchi (Rajendra Institute of Medical Sciences)",
+        "match_score": "96%",
+        "expertise_tags": ["Clinical Research", "Maternal Health", "Diagnostics"],
+        "reason_for_match": "High clinical research volume in rural anemia, existing maternal health infrastructure, and proximity to regional health centers."
+      },
+      "cta": "Express Interest Button (triggers confirmation dialog, logs university partner interest)"
+    },
+    {
+      "feature_id": "medtech_industry_collaboration",
+      "title": "MedTech Industry Collaboration Module",
+      "example_partner": {
+        "company_name": "VitalSense Health Technologies",
+        "match_score": "91%",
+        "capabilities": ["Non-invasive point-of-care diagnostics", "Optical spectroscopy", "ISO 13485 certified manufacturing"],
+        "support_options": ["Funding", "Mentorship", "Prototype", "Technology", "Deployment"]
+      },
+      "cta": "Offer Support Button (opens interactive modal to select support type: Funding/Mentorship/Prototype/Technology/Deployment)"
+    },
+    {
+      "feature_id": "project_lifecycle_timeline",
+      "title": "Project Lifecycle Premium Visual Timeline",
+      "lifecycle_stages": [
+        "Submitted",
+        "AI Analysis",
+        "Verified",
+        "University Matched",
+        "Industry Partnered",
+        "Prototype",
+        "Validation",
+        "Pilot",
+        "Deployment",
+        "Impact"
+      ],
+      "interactive_control": "Demo Button 'Advance Stage' (+1 stage step, with visual pulse indicator and sound/toast effect)."
+    },
+    {
+      "feature_id": "main_demo_example",
+      "title": "Main Demo Challenge Case",
+      "challenge_data": {
+        "id": "jmib-demo-001",
+        "title": "Affordable anemia screening for pregnant women in rural Jharkhand",
+        "district": "Ranchi & West Singhbhum",
+        "people_affected": "340,000+ pregnant women",
+        "urgency": "HIGH",
+        "ai_analysis": {
+          "category": "Maternal & Child Health",
+          "priority": "HIGH",
+          "impact_score": 92,
+          "ai_confidence": "94%",
+          "required_expertise": ["Biomedical Engineering", "Diagnostics", "Optical Sensors", "Community Nursing"]
+        },
+        "university_match": {
+          "institution": "RIMS Ranchi",
+          "score": "96%",
+          "expertise": ["Clinical Research", "Maternal Health", "Diagnostics"]
+        },
+        "industry_match": {
+          "company": "VitalSense Health Technologies",
+          "score": "91%",
+          "support_types": ["Prototype", "Funding", "Deployment"]
+        },
+        "current_stage": "University Matched"
+      }
+    },
+    {
+      "feature_id": "ministry_dashboard",
+      "title": "Ministry Executive Dashboard",
+      "stat_cards": [
+        { "label": "Total Challenges", "value": "128", "trend": "+18% this month" },
+        { "label": "Active Projects", "value": "42", "trend": "14 in prototyping" },
+        { "label": "Universities Engaged", "value": "16", "trend": "RIMS, BIT Mesra, IIT ISM" },
+        { "label": "Industry Partners", "value": "29", "trend": "MedTech & Biotech" },
+        { "label": "Solutions Deployed", "value": "11", "trend": "Across 18 districts" },
+        { "label": "People Impacted", "value": "1.2M+", "trend": "Rural & Tribal health" }
+      ],
+      "badge_note": "Demo Data",
+      "charts": [
+        "Challenges by Healthcare Domain (Recharts BarChart/PieChart)",
+        "Innovation Lifecycle Pipeline Distribution (Recharts Area/BarChart)",
+        "District Impact Heatmap/Table"
+      ]
+    }
+  ],
+  "components_and_ui_patterns": {
+    "cards": "Flat white/slate-900 surfaces with 1px border (border-slate-200 dark:border-slate-800), rounded-xl, subtle hover shadow (hover:shadow-lg transition-all duration-200)",
+    "badges": "Pill-shaped badges with subtle background tint and high-contrast text",
+    "buttons": "Pill or rounded-lg buttons, active feedback, loading states, explicit hover text colors",
+    "forms": "Shadcn Form primitives (Input, Textarea, Select, RadioGroup, Checkbox) with explicit focus rings (focus:ring-2 focus:ring-[#0A9396])",
+    "charts": "Recharts with custom tooltip, deep teal and navy color palette (#005F73, #0A9396, #94D2BD, #EE9B00, #0A192F)",
+    "modal_dialogs": "Shadcn Dialog and Sheet with crystal blur backdrop (backdrop-blur-sm bg-slate-900/40)"
+  },
+  "image_urls": {
+    "hero_scientist_lab": "https://images.unsplash.com/photo-1614935151651-0bea6508db6b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxtZWR0ZWNoJTIwbGFib3JhdG9yeSUyMHNjaWVudGlzdCUyMHJlc2VhcmNoJTIwYmlvdGVjaG5vbG9neSUyMGhlYWx0aHxlbnwwfHx8fDE3ODg2MDI3MjF8MA&ixlib=rb-4.1.0&q=85",
+    "lab_microscope_research": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxtZWR0ZWNoJTIwbGFib3JhdG9yeSUyMHNjaWVudGlzdCUyMHJlc2VhcmNoJTIwYmlvdGVjaG5vbG9neSUyMGhlYWx0aHxlbnwwfHx8fDE3ODg2MDI3MjF8MA&ixlib=rb-4.1.0&q=85",
+    "medtech_device": "https://images.unsplash.com/photo-1559000357-f6b52ddfbe37?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHozfHxtZWRpY2FsJTIwZGlhZ25vc3RpYyUyMGRldmljZSUyMGhlYWx0aGNhcmUlMjB0ZWNobm9sb2d5JTIwbGFiJTIwZXF1aXBtZW50fGVufDB8fHx8MTc4ODYwMjcyNXww&ixlib=rb-4.1.0&q=85",
+    "rural_healthcare": "https://images.unsplash.com/photo-1648964388258-e71b58683ed0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwyfHxydXJhbCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwdGVjaG5vbG9neSUyMGRvY3RvciUyMEluZGlhfGVufDB8fHx8MTc4ODYwMjcxNHww&ixlib=rb-4.1.0&q=85"
+  },
+  "testing_and_qa_requirements": {
+    "data_testid_rules": "All interactive elements, buttons, form inputs, stage indicators, metrics, and modals MUST contain explicit data-testid attributes in kebab-case format.",
+    "required_test_ids": [
+      "header-logo",
+      "header-nav-home",
+      "header-nav-explore",
+      "header-nav-submit",
+      "header-nav-dashboard",
+      "report-challenge-hero-button",
+      "explore-challenges-hero-button",
+      "challenge-submit-form",
+      "input-challenge-title",
+      "input-challenge-description",
+      "input-challenge-domain",
+      "input-challenge-district",
+      "input-people-affected",
+      "input-urgency",
+      "submit-challenge-button",
+      "under-ministry-review-badge",
+      "ai-analysis-panel",
+      "ai-disclaimer-label",
+      "ai-impact-score",
+      "university-match-card-rims",
+      "express-interest-button",
+      "industry-collab-card-vitalsense",
+      "offer-support-button",
+      "lifecycle-timeline-container",
+      "advance-stage-button",
+      "ministry-stat-card-total-challenges",
+      "ministry-stat-card-people-impacted",
+      "sidebar-toggle"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Do NOT delete or modify existing backend setup unless required; implement full interactive React frontend with localStorage persistence for challenges and submissions.",
+    "2. Use Outfit for headings and Inter for body text; load Google Fonts in public/index.html.",
+    "3. Apply the exact deep medical teal (#005F73 / #0A9396), navy (#0A192F), off-white (#F8FAFC), mint (#E6F4F1), and amber (#EE9B00) palette.",
+    "4. Ensure all 5 main features (Submission, AI Analysis Panel, University Matching, MedTech Industry Collab, Visual Lifecycle Timeline) are prominent and interactive.",
+    "5. Include the main demo example: 'Affordable anemia screening for pregnant women in rural Jharkhand' pre-loaded as the featured challenge.",
+    "6. Mark all invented metrics in the Ministry Dashboard with a distinct 'Demo Data' badge.",
+    "7. Include the exact AI disclaimer text: 'AI-assisted analysis, not medical diagnosis' inside the AI Problem Analysis panel.",
+    "8. Use Sonner toasts for user actions (Submitting challenge, expressing university interest, offering industry support, advancing lifecycle stage).",
+    "9. Add data-testid attributes to all key components as listed in data_testid_rules."
+  ]
+}
