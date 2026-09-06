@@ -7,7 +7,7 @@ import { useStore } from "@/lib/store";
 import { ArrowRight, ShieldCheck, Building2, Users, Cpu, Sparkles } from "lucide-react";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1779981140213-8ba54c2c7a5a?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80";
+  "https://images.unsplash.com/photo-1774615600073-5e04e3082108?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -75,7 +75,7 @@ export default function Home() {
             className="relative"
           >
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xl">
-              <img src={HERO_IMG} alt="Smart city civic innovation" className="w-full h-[340px] lg:h-[420px] object-cover" />
+              <img src={HERO_IMG} alt="Rural Jharkhand village" className="w-full h-[340px] lg:h-[420px] object-cover" />
             </div>
             <div className="absolute -bottom-5 -left-3 sm:left-6 glass rounded-xl border border-slate-200 shadow-lg px-4 py-3 flex items-center gap-3">
               <span className="grid place-items-center w-9 h-9 rounded-lg bg-[#0A192F] text-[#94D2BD]">

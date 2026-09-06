@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState, useCallback } from "rea
 import { SEED_CHALLENGES } from "./seed";
 import { runAIAnalysis, matchUniversities, matchIndustries, LIFECYCLE } from "./engine";
 
-const KEY = "jmib_challenges_v4";
+const KEY = "jmib_challenges_v5";
 const Ctx = createContext(null);
 
 export function StoreProvider({ children }) {

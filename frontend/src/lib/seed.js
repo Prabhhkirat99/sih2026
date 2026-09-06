@@ -16,6 +16,7 @@ const RAW = [
     featured: true,
     stageIndex: 4,
     createdAt: "2026-05-20T09:00:00.000Z",
+    photo: "https://images.unsplash.com/photo-1681326732948-c11f996751d1?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-light-002",
@@ -30,6 +31,7 @@ const RAW = [
     impactScore: 74,
     stageIndex: 2,
     createdAt: "2026-05-24T11:30:00.000Z",
+    photo: "https://images.unsplash.com/photo-1785566269399-de33664b0a47?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-health-003",
@@ -44,6 +46,7 @@ const RAW = [
     impactScore: 92,
     stageIndex: 5,
     createdAt: "2026-05-12T09:00:00.000Z",
+    photo: "https://images.unsplash.com/photo-1620989983305-be972a0e290e?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-agri-004",
@@ -58,6 +61,7 @@ const RAW = [
     impactScore: 86,
     stageIndex: 10,
     createdAt: "2026-05-08T08:15:00.000Z",
+    photo: "https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-waste-005",
@@ -72,6 +76,7 @@ const RAW = [
     impactScore: 79,
     stageIndex: 9,
     createdAt: "2026-04-29T10:00:00.000Z",
+    photo: "https://images.unsplash.com/photo-1762805544399-7cdf748371e0?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-tele-006",
@@ -86,6 +91,7 @@ const RAW = [
     impactScore: 78,
     stageIndex: 1,
     createdAt: "2026-05-22T11:30:00.000Z",
+    photo: "https://images.unsplash.com/photo-1665649998055-bbd272dacad7?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-access-007",
@@ -100,6 +106,7 @@ const RAW = [
     impactScore: 71,
     stageIndex: 2,
     createdAt: "2026-05-15T14:00:00.000Z",
+    photo: "https://images.unsplash.com/photo-1563375053-63b5fcff5ccb?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
   {
     id: "jmib-demo-edu-008",
@@ -114,6 +121,7 @@ const RAW = [
     impactScore: 83,
     stageIndex: 4,
     createdAt: "2026-05-05T09:30:00.000Z",
+    photo: "https://images.unsplash.com/photo-1692269725836-fbd72e98883f?crop=entropy&cs=srgb&fm=jpg&w=800&q=80",
   },
 ];
 
